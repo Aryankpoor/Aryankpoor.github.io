@@ -1,213 +1,347 @@
 <!DOCTYPE html>
 
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="my new portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aryan Kapoor | Front-End Developer</title>
+    <link rel="icon" href="https://i.ibb.co/S7Sq8jw/gamer.png" type="image/png">
 
-    <title>Aryan Kapoor | Developer</title>
+
+    <!--  Bootstrap css file  -->
+    <link rel="preload" href="./css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="preload" href="./css/all.min.css" as="style">
+    <link rel="stylesheet" href="./css/all.min.css">
+
+
     
-    <meta charset="UTF-8" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+
+    <!--  custom css file  -->
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="preload" href="./css/responsive.css" as="style">
+    <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
-
 
 <body>
 
 
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav>
+    <!--  ======================= Start Header Area ============================== -->
+
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="https://i.ibb.co/S7Sq8jw/gamer.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skillset">Skillset</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">projects</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#social">social</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--  ======================= End Header Area ============================== -->
+
+    <!--  ======================= Start Main Area ================================ -->
+    <main class="site-main">
 
 
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()" >About</a>
-    <a href="#skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()" >My Skills</a>
-    <a href="#challenges" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">My challenges and Resources</a>
-    <a href="#experience" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()" >My Experience</a>
-  </div>
-</nav>
+        <!--  ======================= Start Banner Area =======================  -->
+        <section class="site-banner" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hi There</h3>
+                        <h1 class="title-text text-uppercase">I am Aryan</h1>
+                        <h4 class="title-text text-uppercase">Front-end Developer Student</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <a href="https://github.com/Aryankpoor" target="_blank" rel="noopener"><button type="button" class="btn button primary-button mr-4 text-uppercase"><i class="fab fa-github"> View Github</i></button></a>
+                                <a href="https://kapoor-aryan.netlify.app" rel="noopener"><button type="button" class="btn button secondary-button text-uppercase">View Portfolio</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="./img/banner/banner-image.jpg" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ======================= End Banner Area =======================  -->
+
+        <!--  ========================= About Area ==========================  -->
+
+        <section class="about-area" id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/banner/image2.jpg" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>A bit</span>
+                            <span>about</span>
+                            <span>me</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                I am a 15 year old with 1 year front-end development experience. I can make 3d icons and designs in vectary and create awesome animations with GSAP. I also know basic python side-by-side and can make small games in pygame.
+                            </p>
+                            <p class="para">
+                                I live In Delhi, the heart of India. While I am aspiring to be in Microsoft, I also have started freelancing on fiverr. Not made any gig though yet. I know React, Node and GatsbyJS.
+                                My main projects include an <a href="https://vorizon.netlify.app" target="_blank" rel="noopener">E-commerce site</a> and <a href="https://kapoor-aryan.netlify.app" target="_blank" rel="noopener">A portfolio site.</a>
+                            </p>
+                        </div>
+                        <a href="https://github-readme-stats.vercel.app/api/wakatime?username=Aryankapoor&theme=cobalt" target="_blank" rel="noopener"><button type="button"            class="btn button primary-button text-uppercase">Veiw wakatime weekly stats</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ========================= End About Area ==========================  -->
+
+        
+
+        <!--  ====================== Start Services Area =============================  -->
+
+        <section class="services-area" id="skillset">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="text-uppercase title-text">Skillset</h1>
+                        <p class="para">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="container services-list">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s1.png" alt="Services-1">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Desktop Dev</h5>
+                                    <p class="card-text text-secondary">
+                                        Desktop development in python's tkinter module and games using pygame.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s2.png" alt="Services-2">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">ui design</h5>
+                                    <p class="card-text text-secondary">
+                                        Design app UI and web UIs using figma. Convert any icon into 3d using vectary.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s3.png" alt="Services-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Front-end</h5>
+                                    <p class="card-text text-secondary">
+                                        Front-end web development using html, css, js. Javascript frameworks include Gatsby, Node and React.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./img/services/s4.png" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">seo optimize</h5>
+                                    <p class="card-text text-secondary">
+                                        Optimize seo ranking of project sites. Check this site's seo. Press Ctrl+Shift+I and then Choose the Lighthouse tab.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ====================== End Services Area =============================  -->
+
+        <!--  ======================= Project Area =============================  -->
+
+        <section class="project-area" id="projects">
+            <div class="container">
+                <div class="project-title pb-5">
+                    <h1 class="text-uppercase title-h1">Recently Done Projects</h1>
+            
+                </div>
+
+                
+                            
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" title="link to vorizon's github repo" href="https://github.com/Aryankpoor/Vorizon---e-commerce-site" target="_blank" rel="noopener">
+                                    <img src="./img/banner/vorizon.jpg" alt="vorizon - ecommerce site link" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Vorizon - E-commerce site</h4>
+                                <span class="text-secondary">E-commerce, web</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                           
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" title="link to my older portfolio's github repo" href="https://github.com/Aryankpoor/Kapoor-aryan" rel="noopener" target="_blank">
+                                    <img src="./img/banner/portfolio.png" alt="older portfolio link" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Portfolio Site</h4>
+                                <span class="text-secondary">Portfolio, template</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ======================= End Project Area =============================  -->
+
+        
+
+       <br>
+<br>
+        <!--  ========================== Subscribe me Area ============================  -->
+        <section class="subscribe-us-area" id="contact">
+            <div class="container subscribe">
+                <div class="row">
+                    <div class="col-lg-12 text-center subscribe-title">
+                        <h4 class="text-uppercase">Get started!</h4>
+                        <p class="para"><a href="mailto:Kapooraryan0419@gmail.com" title="mail me!" rel="noopener">Send Me a mail</p>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <form class="w-50">
+                        <div class="row d-flex flex-row flex-wrap">
+                            <div class="col input-textbox">
+                                <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col">
+                                <div class="btn-submit">
+                                    <button type="submit" class="btn btn-success float-right"><a href="mailto:Kapooraryan0419@gmail.com"><label>Mail me!</label></button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </a>
+        <!--  ========================== End Subscribe me Area ============================  -->
 
 
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+    </main>
+    <!--  ======================= End Main Area ================================ -->
 
-  
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Aryan Kapoor</b></h1>
-    <p>Web and Python Developer.</p>
-    <img src="img4.svg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="img4.svg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-  </header>
-
-  
-  <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
-    <hr class="w3-opacity">
-
-
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="./assets/1.png" style="width:100%">
-        <img src="./assets/undraw_portfolio_website_lidw.png" style="width:100%">
-        <img src="assets/2.png" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="./assets/91462341-b3167f80-e8a7-11ea-8df7-39e6e88aa334.jpg" style="width:100%">
-        <img src="./assets/undraw_portfolio_feedback_exfk.png" style="width:100%">
-        <img src="portfolio_update.svg" style="width:100%">
-      </div>
+    <footer class="footer-area" id="social">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <img src="https://i.ibb.co/ZM4868Q/bitmojji.png" alt="logo">
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="https://www.facebook.com/profile.php?id=100054673326687" title="Facebook link" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/___aryan04" target="_blank" title="instagram link" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/AryanKa18297062" target="_blank" title="twitter link" rel="noopener"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
     
-    </div>
-  
-  </div>
-
-  
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2 id="about">About</h2>
-    <hr class="w3-opacity">
-    <p>Hi there, I am Aryan Kapoor. I am a web and python developer. I am 14 years old and currently living in National Capital, India. I am currently learning front-end. I make apps in python  But mostly I develop websites . I can develop games in python. Most of my projects are present on <a href="https://github.com/Aryankpoor" target="_blank">Github.</a> If you want to collab with me, <a href="mailto:Kapooraryan0419@gmail.com" target="_blank">mail me!</a>
-    </p>
-    <h3 class="w3-padding-16" id="skills">My Skills</h3>
-    <p class="w3-wide">Front-end</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
-    </div>
-    <p class="w3-wide">Python </p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div>
-    <p class="w3-wide">Other</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
-    </div><br>
-
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">600+</span><br>
-        Commits
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">100k+</span><br>
-        lines of code
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">20+</span><br>
-        Projects
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">1</span><br>
-        Certification
-      </div>
-    </div>
 
 
-    <!-- Site template - w3.org -->
-    <h3 class="w3-padding-24" id="challenges">My Challenges and resources</h3>
-    
-    <p><span class="w3-large w3-text-black w3-margin-right">Css Web Resources</span> Template/Resource</p>
-    <p><a href="https://github.com/Aryankpoor/Css-web-resources" target="_blank">View css resources here</a></p><br>
-   
-    <p><span class="w3-large w3-text-black w3-margin-right">One page html challenge</span> challenge</p>
-      <p>One page html challenge by Metroxe on <a href="https://github.com/Metroxe">Github</a></p><br>
-    
-    <p><span class="w3-large w3-text-black w3-margin-right">30 days of code</span> challenge</p>
-      <p>Solving the 30 day code challenge on <a href="https://hackerrank.com">Hackerrank</a></p><br>
-    
-    
-    <h3 class="w3-padding-16" id="experience">My Experience</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Development</li>
-          <li class="w3-padding-16">Responsive Web Development course from freecodecamp.org</li>
-          <li class="w3-padding-16">Robotics Course in IoT for 3 years</li>
-          <li class="w3-padding-16">Hacktoberfest 2020</li>
-          <li class="w3-padding-16">Javascript Algorithms and Data structures course from freecodecamp.org</li>
-          <li class="w3-padding-16">
-            <h2></h2>
-            <span class="w3-opacity"></span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-          </li>
-        </ul>
-      </div>
+    <!--  Jquery js file  -->
+    <link rel="preload" href="./js/jquery.3.4.1.js" as="script">
+    <script src="./js/jquery.3.4.1.js"></script>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-          <li class="w3-black w3-xlarge w3-padding-32">Achiements and Competitions</li>
-          <li class="w3-padding-16"><a href="https://freecodecamp.org/aryan-kapoorr" target="_blank" >Responsive web design certification from freecodcamp</li></a>
-          <li class="w3-padding-16">Python Corona code zone by Amity University</li>
-          
-          <li class="w3-padding-16">
-            <h2></h2>
-            <span class="w3-opacity"></span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-          
-          </li>
-        </ul>
-      </div>
-    
-    </div>
-    
-  <!-- End About Section -->
-  </div>
+    <!--  Bootstrap js file  -->
+    <link rel="preload" href="./js/bootstrap.min.js" as="script">
+    <script src="./js/bootstrap.min.js"></script>
 
-  <!-- Footer -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Collaborate With Me</h2>
-    <hr class="w3-opacity">
+    <!--  isotope js library  -->
+    <link rel="preload" href="./vendor/isotope/isotope.min.js" as="script">
+    <script src="./vendor/isotope/isotope.min.js"></script>
 
-    <div class="w3-section">
-      <p></p>
-      <a href="https://freecodecamp.org/aryan-kapoorr" target="_blank"><i class="fa fa-free-code-camp fa-4x" aria-hidden="true" id="fcc"></i></a>
-      <a href="https://instagram.com/__aryan04" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true" id="ig"></i></a>
-      <a href="https://github.com/Aryankpoor" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true" id="gh"></i></a>
-      <a href="https://codepen.io/codewitharyann" target="_blank"><i class="fa fa-codepen fa-4x" aria-hidden="true" id="cp"></i></a>
+    <!--  Magnific popup script file  -->
+    <link rel="preload" href="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js" as="script">
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
 
-    </div>
-  
-      
-  </footer>
-  
+    <!--  Owl-carousel js file  -->
+    <link rel="preload" href="./vendor/owl-carousel/js/owl.carousel.min.js" as="script">
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
-</div>
+    <!--  custom js file  -->
+    <link rel="preload" href="./js/main.js" as="script">
+    <script src="./js/main.js"></script>
 
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
 
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-    
-    
-</script>
-
-    
-   
 </body>
+
 </html>
