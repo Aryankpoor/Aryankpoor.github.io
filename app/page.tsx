@@ -16,7 +16,6 @@ import {
 } from "@/components/ui/breadcrumb"
 import { Button } from "@/components/ui/button"
 import { Mail } from "lucide-react"
-import Project from "./projects";
 
 
 export default function Home() {
@@ -29,8 +28,8 @@ export default function Home() {
   <AlertTitle>A bit about me.....</AlertTitle>
   <AlertDescription>
     Hi there! I am Aryan, an 18 year old software developer from India with a passion for electronics.
-    You know, arduino, raspbbery pi, esp32. That kind of stuff. I am currently studying in college, majoring 
-    in Computer Science. A self-taught developer and have been coding for the past 5 years.
+    You know, arduino, raspbbery pi, esp32. That kind of stuff. I am currently a freshman in college, majoring 
+    in Computer Science. I am a self-taught developer and have been coding for the past 5 years.
   </AlertDescription>
 </Alert>
 
