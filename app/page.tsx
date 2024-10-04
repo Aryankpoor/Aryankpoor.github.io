@@ -6,11 +6,22 @@ import {
   } from "@/components/ui/accordion"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Terminal } from "lucide-react"
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+
+
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     
+
       <Alert>
   <Terminal className="h-4 w-4" />
   <AlertTitle>A bit about me.....</AlertTitle>
@@ -20,6 +31,8 @@ export default function Home() {
     in Computer Science. A self-taught developer and have been coding for the past 5 years.
   </AlertDescription>
 </Alert>
+
+
       <Accordion type="single" collapsible>
   <AccordionItem value="item-1">
     <AccordionTrigger>What are you currently learning?</AccordionTrigger>
@@ -42,6 +55,22 @@ export default function Home() {
     </AccordionContent>
   </AccordionItem>
 </Accordion>
+<Breadcrumb>
+  <BreadcrumbList>
+    <BreadcrumbItem>
+      <BreadcrumbLink href="/">Home</BreadcrumbLink>
+    </BreadcrumbItem>
+    <BreadcrumbSeparator />
+    <BreadcrumbItem>
+      <BreadcrumbLink href="/components">Profile</BreadcrumbLink>
+    </BreadcrumbItem>
+    <BreadcrumbSeparator />
+    <BreadcrumbItem>
+      <BreadcrumbPage>Projects</BreadcrumbPage>
+    </BreadcrumbItem>
+  </BreadcrumbList>
+</Breadcrumb>
+
     </div>
   );
 }
