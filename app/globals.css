@@ -76,3 +76,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.footer-left {
+  display: flex;
+  justify-content: left;
+}

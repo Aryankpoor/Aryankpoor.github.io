@@ -14,7 +14,9 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-
+import { Button } from "@/components/ui/button"
+import { Mail } from "lucide-react"
+import Project from "./projects";
 
 
 export default function Home() {
@@ -58,19 +60,24 @@ export default function Home() {
 <Breadcrumb>
   <BreadcrumbList>
     <BreadcrumbItem>
-      <BreadcrumbLink href="/">Home</BreadcrumbLink>
+      <BreadcrumbPage>Home</BreadcrumbPage>
     </BreadcrumbItem>
     <BreadcrumbSeparator />
     <BreadcrumbItem>
-      <BreadcrumbLink href="/components">Profile</BreadcrumbLink>
+      <BreadcrumbLink href="/profile">Profile</BreadcrumbLink>
     </BreadcrumbItem>
     <BreadcrumbSeparator />
     <BreadcrumbItem>
-      <BreadcrumbPage>Projects</BreadcrumbPage>
+      <BreadcrumbLink href="/projects">Projects</BreadcrumbLink>
     </BreadcrumbItem>
   </BreadcrumbList>
 </Breadcrumb>
+<div className="footer-left">
 
+<a href="mailto:aryan@hackclub.com"><Button>
+      <Mail className="mr-2 h-4 w-4" />Send me an email
+    </Button></a>
+</div>
     </div>
   );
 }
