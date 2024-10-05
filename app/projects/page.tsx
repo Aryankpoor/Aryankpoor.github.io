@@ -6,7 +6,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent } from "@/components/ui/tabs"
 import {
   Card,
   CardContent,
@@ -20,57 +20,40 @@ import { Label } from "@/components/ui/label"
   export default function Project() {
     return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Tabs defaultValue="account" className="w-[400px]">
-      <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="account">Account</TabsTrigger>
-        <TabsTrigger value="password">Password</TabsTrigger>
-      </TabsList>
+     <div className="main">
+     <Tabs defaultValue="account" className="w-[400px]">
       <TabsContent value="account">
         <Card>
           <CardHeader>
-            <CardTitle>Account</CardTitle>
+            <CardTitle>Metamorpheus</CardTitle>
             <CardDescription>
-              Make changes to your account here. Click save when done.
+              A web based AI gpt chatbot. Talk all you want, and ask away without any restrictions.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
             <div className="space-y-1">
-              <Label htmlFor="name">Name</Label>
+              <Label htmlFor="name">Technologies Used:</Label>
              
             </div>
             <div className="space-y-1">
-              <Label htmlFor="username">Username</Label>
-              
+              <Label htmlFor="username">Gemini API</Label>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">React</Label>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">Express</Label>
             </div>
           </CardContent>
           <CardFooter>
-            <Button>Save changes</Button>
+            <a href="" target="_blank"><Button>View on Github</Button></a>
           </CardFooter>
         </Card>
       </TabsContent>
-      <TabsContent value="password">
-        <Card>
-          <CardHeader>
-            <CardTitle>Password</CardTitle>
-            <CardDescription>
-              Change your password here. After saving, youll be logged out.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="current">Current password</Label>
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="new">New password</Label>
-              
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button>Save password</Button>
-          </CardFooter>
-        </Card>
-      </TabsContent>
+      
     </Tabs>
+     </div>
+      
       <div className="footer">
 <div className="left">
 <a href="mailto:aryan@hackclub.com"><Button>
