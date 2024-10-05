@@ -92,12 +92,32 @@ body {
   margin-left: 120px;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+  top: 20px;
+  padding-bottom: 20px;
+}
+
+.card1 {
+  margin-top: 10px;
+  top: 20px;  
+  left: 10px;
+}
+
+.card2 {
+  margin-top: 10px;
+  top: 20px;
+  right: 10px;
+}
+
 .footer {
+  display: flex;
   position: absolute;
+  margin-top: 5px;
   bottom: 0;
 }
 
-.main {
-  margin-top: 30px;
-  padding-top: 30px;
+.btn {
+  margin-left: 5px;
 }

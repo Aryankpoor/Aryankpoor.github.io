@@ -1,11 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Mail } from "lucide-react"
 import * as React from "react"
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible"
 import { Tabs, TabsContent } from "@/components/ui/tabs"
 import {
   Card,
@@ -20,8 +14,12 @@ import { Label } from "@/components/ui/label"
   export default function Project() {
     return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div>
+
+    </div>
      <div className="main">
-     <Tabs defaultValue="account" className="w-[400px]">
+      <div className="card1">
+      <Tabs defaultValue="account" className="w-[400px]">
       <TabsContent value="account">
         <Card>
           <CardHeader>
@@ -46,31 +44,124 @@ import { Label } from "@/components/ui/label"
             </div>
           </CardContent>
           <CardFooter>
-            <a href="" target="_blank"><Button>View on Github</Button></a>
+            <div><a href="https://github.com/Aryankpoor/metamorpheus" target="_blank"><Button>View on Github</Button></a></div>
+            <div className="btn"><a href="https://metamorpheus.vercel.app" target="_blank"><Button>Live Demo</Button></a></div>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+      
+    </Tabs>
+      </div>
+     
+     <div className="card2">
+     <Tabs defaultValue="account" className="w-[400px]">
+      <TabsContent value="account">
+        <Card>
+          <CardHeader>
+            <CardTitle>Blogger</CardTitle>
+            <CardDescription>
+              A blog generator which uses GPT to generate blog posts based on a given topic.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <div className="space-y-1">
+              <Label htmlFor="name">Technologies Used:</Label>
+             
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">OpenAI API</Label>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">Python</Label>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">Dotenv</Label>
+            </div>
+          </CardContent>
+          <CardFooter>
+            <a href="https://github.com/Aryankpoor/gpt-blogger" target="_blank"><Button>View on Github</Button></a>
           </CardFooter>
         </Card>
       </TabsContent>
       
     </Tabs>
      </div>
-      
-      <div className="footer">
-<div className="left">
-<a href="mailto:aryan@hackclub.com"><Button>
-    <Mail className="mr-2 h-4 w-4" />Send me an email
-  </Button></a>
-</div>
-
- <div className="right">
- <Collapsible>
-  <CollapsibleTrigger>You might find my socials here -:</CollapsibleTrigger>
-  <CollapsibleContent>
-    Whooops not here. Maybe you will find them somewhere else.
-  </CollapsibleContent>
-</Collapsible>
- </div>
   
-</div>  
+     </div>
+      <br />
+     <div className="main">
+      <div className="card1">
+      <Tabs defaultValue="account" className="w-[400px]">
+      <TabsContent value="account">
+        <Card>
+          <CardHeader>
+            <CardTitle>Ordel</CardTitle>
+            <CardDescription>
+              An ecommerce shipping company website boilerplate made as part of Hacktoberfest
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <div className="space-y-1">
+              <Label htmlFor="name">Technologies Used:</Label>
+             
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">HTML/CSS/JS</Label>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">Netlify</Label>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">Swiper</Label>
+            </div>
+          </CardContent>
+          <CardFooter>
+          <div><a href="https://github.com/Aryankpoor/Ordel" target="_blank"><Button>View on Github</Button></a></div>
+          <div className="btn"><a href="https://order-trackerr.netlify.app/" target="_blank"><Button>Live Demo</Button></a></div>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+      
+    </Tabs>
+      </div>
+     
+     <div className="card2">
+     <Tabs defaultValue="account" className="w-[400px]">
+      <TabsContent value="account">
+        <Card>
+          <CardHeader>
+            <CardTitle>Portfolio Website</CardTitle>
+            <CardDescription>
+              In case you were wondering, I am talking about this website you are on which I built from scratch
+              
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <div className="space-y-1">
+              <Label htmlFor="name">Technologies Used:</Label>
+             
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">Next.js</Label>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">ShadCN</Label>
+            </div>
+            <div className="space-y-1">
+              <Label htmlFor="username">ESlint</Label>
+            </div>
+          </CardContent>
+          <CardFooter>
+            <a href="https://github.com/Aryankpoor/Aryankpoor.github.io" target="_blank"><Button>View on Github</Button></a>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+      
+    </Tabs>
+     </div>
+  
+     </div>
+ 
       </div>
     );
   }

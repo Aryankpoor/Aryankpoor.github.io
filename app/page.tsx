@@ -4,25 +4,39 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Terminal } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Mail } from "lucide-react"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Terminal } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Mail } from "lucide-react"
 import React from 'react';
-
+import { Separator } from "@/components/ui/separator"
 
 
 export default function Home() {
   
 return (
   <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-
-
+    <div>
+      <div className="space-y-1">
+        <h4 className="text-sm font-medium leading-none">Aryan Kapoor</h4>
+        <p className="text-sm text-muted-foreground">
+          Studying at Vellore Institute of Technology, majoring in Computer Science
+        </p>
+      </div>
+      <Separator className="my-4" />
+      <div className="flex h-5 items-center space-x-4 text-sm">
+        <div><a href="https://github.com/Aryankpoor" target="_blank">Github</a></div>
+        <Separator orientation="vertical" />
+        <div><a href="https://codepen.io/codewitharyann" target="_blank">Codepen</a></div>
+        <Separator orientation="vertical" />
+        <div><a href="https://www.linkedin.com/in/aryan-kapoor-4b0894207/" target="_blank">LinkedIn</a></div>
+      </div>
+    </div>
     <Alert>
 <Terminal className="h-4 w-4" />
 <AlertTitle>A bit about me.....</AlertTitle>
