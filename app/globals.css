@@ -79,6 +79,15 @@ body {
 
 .footer-left {
   display: flex;
-  justify-content: left;
-  align-items: left;
+  flex-direction: column;
+}
+
+.left {
+  float: left;
+  left: 30px;
+}
+
+.right {
+  float: right;
+  margin-left: 40px;
 }
