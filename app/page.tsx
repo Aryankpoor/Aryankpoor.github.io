@@ -4,17 +4,25 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
+
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { Terminal } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Mail } from "lucide-react"
 import React from 'react';
 import { Separator } from "@/components/ui/separator"
+
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
 
 
 export default function Home() {
@@ -23,7 +31,10 @@ return (
   <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     <div>
       <div className="space-y-1">
-        <h4 className="text-sm font-medium leading-none">Aryan Kapoor</h4>
+        <h4 className="text-sm font-medium leading-none"><Avatar>
+      <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+      <AvatarFallback>CN</AvatarFallback>
+    </Avatar>Aryan Kapoor</h4>
         <p className="text-sm text-muted-foreground">
           Studying at Vellore Institute of Technology, majoring in Computer Science
         </p>
