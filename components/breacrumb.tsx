@@ -26,7 +26,10 @@ export function DynamicBreadcrumb() {
           <BreadcrumbLink href="/projects">Projects</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/profile">Profile</BreadcrumbLink>
+          <BreadcrumbLink href="https://jumpshare.com/s/QQOPvbCvGWn2kdzxSQeI" target="_blank">Resume</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem>
+          <BreadcrumbLink href="https://read.cv/aryankkap" target="_blank">Profile</BreadcrumbLink>
         </BreadcrumbItem>
         {pathSegments.map((segment, index) => {
           const href = `/${pathSegments.slice(0, index + 1).join('/')}`

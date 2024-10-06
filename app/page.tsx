@@ -37,6 +37,7 @@ return (
         <div><a href="https://www.linkedin.com/in/aryan-kapoor-4b0894207/" target="_blank">LinkedIn</a></div>
       </div>
     </div>
+    <div className="alert">
     <Alert>
 <Terminal className="h-4 w-4" />
 <AlertTitle>A bit about me.....</AlertTitle>
@@ -48,8 +49,8 @@ return (
   in Computer Science. I am a self-taught developer and have been coding for the past 5 years.
 </AlertDescription>
 </Alert>
-
-
+    </div>
+    <div className="acc">
     <Accordion type="single" collapsible>
 <AccordionItem value="item-1">
   <AccordionTrigger>What are you currently learning?</AccordionTrigger>
@@ -72,8 +73,11 @@ return (
   </AccordionContent>
 </AccordionItem>
 </Accordion>
+    </div>
+    
 
 <div className="footer">
+
 <div className="left">
 <a href="mailto:aryan@hackclub.com"><Button>
     <Mail className="mr-2 h-4 w-4" />Send me an email
