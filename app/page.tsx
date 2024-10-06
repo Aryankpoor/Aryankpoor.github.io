@@ -28,26 +28,24 @@ import {
 export default function Home() {
   
 return (
-  <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <div>
-      <div className="space-y-1">
-        <h4 className="text-sm font-medium leading-none"><Avatar>
-      <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-      <AvatarFallback>CN</AvatarFallback>
-    </Avatar>Aryan Kapoor</h4>
+  <div>
+    <div className="space-y-1">
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl"><Avatar>
+      <AvatarImage src="https://i.ibb.co/8gnWnx7/1728242090408.jpg" alt="Aryan" />
+      <AvatarFallback>Aryan</AvatarFallback>
+    </Avatar>Aryan Kapoor</h1>
         <p className="text-sm text-muted-foreground">
           Studying at Vellore Institute of Technology, majoring in Computer Science
         </p>
-      </div>
+        <div>
+  
       <Separator className="my-4" />
-      <div className="flex h-5 items-center space-x-4 text-sm">
-        <div><a href="https://github.com/Aryankpoor" target="_blank">Github</a></div>
-        <Separator orientation="vertical" />
-        <div><a href="https://codepen.io/codewitharyann" target="_blank">Codepen</a></div>
-        <Separator orientation="vertical" />
-        <div><a href="https://www.linkedin.com/in/aryan-kapoor-4b0894207/" target="_blank">LinkedIn</a></div>
-      </div>
+      
     </div>
+      </div>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    
+    
     <div className="alert">
     <Alert>
 <Terminal className="h-4 w-4" />
@@ -61,7 +59,10 @@ return (
 </AlertDescription>
 </Alert>
     </div>
-    <div className="acc">
+    
+
+<div className="footer">
+<div className="acc">
     <Accordion type="single" collapsible>
 <AccordionItem value="item-1">
   <AccordionTrigger>What are you currently learning?</AccordionTrigger>
@@ -85,9 +86,6 @@ return (
 </AccordionItem>
 </Accordion>
     </div>
-    
-
-<div className="footer">
 
 <div className="left">
 <a href="mailto:aryan@hackclub.com"><Button>
@@ -102,9 +100,18 @@ return (
     Whooops not here. Maybe you will find them somewhere else.
   </CollapsibleContent>
 </Collapsible>
+<div className="flex h-5 items-center space-x-4 text-sm">
+        <div><a href="https://github.com/Aryankpoor" target="_blank">Github</a></div>
+        <Separator orientation="vertical" />
+        <div><a href="https://codepen.io/codewitharyann" target="_blank">Codepen</a></div>
+        <Separator orientation="vertical" />
+        <div><a href="https://www.linkedin.com/in/aryan-kapoor-4b0894207/" target="_blank">LinkedIn</a></div>
+      </div>
  </div>
   
 </div>
   </div>
+  </div>
+  
 );
 }
