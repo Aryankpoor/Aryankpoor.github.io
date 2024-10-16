@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -83,31 +84,11 @@ body {
 .main {
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.footer {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  margin-top: 10px;
-}
-
-.left {
-  float: left;
-  left: 30px;
-}
-
-.right {
-  float: right;
-  margin-left: 100px;
 }
 
 
 .alert {
   display: flex;
-  margin-bottom: 10px;
 }
 
 .card1 {
@@ -125,9 +106,78 @@ body {
 .acc {
   display: flex;
   margin-right: 15px;
-  float: left;
 }
 
 .btn {
   margin-left: 4px;
+}
+
+.hleft {
+  display: flex;
+  align-items: center;
+}
+
+.top {
+  margin-top: 10px;
+}
+
+.main-pro {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+h1:nth-child(1) {
+  color: transparent;
+	-webkit-text-stroke: 2px #8338ec;
+}
+
+h1:nth-child(2) {
+	color: #c19bf5;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+.left {
+  float: left;
+  left: 30px;
+}
+
+.right {
+  float: right;
+  margin-left: 100px;
 }
