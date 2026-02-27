@@ -182,40 +182,29 @@ export default function Home() {
           </div>
         </section>
 
-        {/*<section
+        <section
           id="thoughts"
           ref={(el) => (sectionsRef.current[2] = el)}
           className="min-h-screen py-20 sm:py-32 opacity-0"
         >
         <div className="space-y-12 sm:space-y-16">
-            <h2 className="text-3xl sm:text-4xl font-light">Recent Projects</h2>
+            <h2 className="text-3xl sm:text-4xl font-light">Recent Projects and Activities</h2>
 
             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
               {[
                 {
-                  title: "",
-                  excerpt: "",
-                  date: "",
+                  title: "GITHUB FIELD DAY INDIA",
+                  excerpt: "Invited by Github Education India to take part in various breakout discussions and activities related to networking and developer relations.",
+                  date: "JULY 2025",
                   readTime: "",
                 },
                 {
-                  title: "",
-                  excerpt: "",
+                  title: "HCB",
+                  excerpt: "Bank Account, Automating taxes and Accounting",
                   date: "",
                   readTime: "",
                 },
-                {
-                  title: "",
-                  excerpt: "",
-                  date: "",
-                  readTime: "",
-                },
-                {
-                  title: "",
-                  excerpt: "",
-                  date: "",
-                  readTime: "",
-                },
+                
               ].map((post, index) => (
                 <article
                   key={index}
@@ -254,7 +243,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section> */}
+        </section> 
 
         <section id="connect" ref={(el) => (sectionsRef.current[3] = el)} className="py-20 sm:py-32 opacity-0">
           <div className="grid lg:grid-cols-2 gap-12 sm:gap-16">
