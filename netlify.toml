@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "out" # if you use next export; remove/change if using plugin
-  publish = ".netlify/output" # recommended when using @netlify/plugin-nextjs
+  publish = ".netlify/output"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
