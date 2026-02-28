@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Aryankpoor/Aryankpoor.github.io.git"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "license": "ISC",
   "author": "aryan kapoor",
   "type": "commonjs",
@@ -135,6 +138,7 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.8",
     "@types/node": "25.3.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3"
