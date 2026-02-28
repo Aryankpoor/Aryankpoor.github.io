@@ -2,7 +2,7 @@
   "name": "aryankpoor.github.io",
   "version": "1.0.0",
   "description": "This is a simple resume template I made as part of MLH Global Hack Week July 2025. Feel free to use it. Time for me to use it as a more concised portfolio website.",
-  "homepage": "https://github.com/Aryankpoor/Aryankpoor.github.io#readme",  
+  "homepage": "https://github.com/Aryankpoor/Aryankpoor.github.io#readme",
   "bugs": {
     "url": "https://github.com/Aryankpoor/Aryankpoor.github.io/issues"
   },
@@ -136,6 +136,7 @@
   },
   "devDependencies": {
     "@types/node": "25.3.2",
-    "@types/react": "^19.2.14"
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
   }
 }
