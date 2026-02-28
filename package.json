@@ -2,7 +2,7 @@
   "name": "aryankpoor.github.io",
   "version": "1.0.0",
   "description": "This is a simple resume template I made as part of MLH Global Hack Week July 2025. Feel free to use it. Time for me to use it as a more concised portfolio website.",
-  "homepage": "https://github.com/Aryankpoor/Aryankpoor.github.io#readme",
+  "homepage": "https://github.com/Aryankpoor/Aryankpoor.github.io#readme",  
   "bugs": {
     "url": "https://github.com/Aryankpoor/Aryankpoor.github.io/issues"
   },
@@ -17,8 +17,12 @@
   "directories": {
     "lib": "lib"
   },
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "aria-hidden": "^1.2.6",
@@ -80,7 +84,7 @@
     "minipass": "^7.1.2",
     "minizlib": "^3.1.0",
     "nanoid": "^3.3.11",
-    "next": "^15.2.4",
+    "next": "^15.5.12",
     "next-themes": "^0.4.6",
     "node-releases": "^2.0.21",
     "normalize-range": "^0.1.2",
@@ -131,6 +135,7 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
+    "@types/node": "25.3.2",
     "@types/react": "^19.2.14"
   }
 }
